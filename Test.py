@@ -34,5 +34,7 @@ class measuredOrangeFiash(self):
 
                 elif self.entryPrice * 1.1 <= price or self.price * 0.9 >= price:
                     self.Liquidate(self.spy)
+                    #price = data()
                     self.log("SELL SPY@" + str(price))
                 self.nextentryTime = self.Time + self.period 
+
